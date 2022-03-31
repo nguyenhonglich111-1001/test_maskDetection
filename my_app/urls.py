@@ -20,8 +20,5 @@ from . import views
 app_name = 'my_app'
 
 urlpatterns = [
-    path('',views.example_view),
-    path("variable/", views.variable_view, name="variable"),
-    path("app1/", views.webcam, name="webcam"),
-    path("home/", views.Home, name="home")
+    path('video_feed/', views.video_feed, name="video-feed")
 ]
